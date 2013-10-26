@@ -1,0 +1,14 @@
+BUBBLE SORT
+
+OSNOVNE KARAKTERISTIKE:
+ - Pripada klasi algoritama za sortiranje
+ - Kao i vecina ovakvih algoritama, zasnovan je na poredjenjima i zamenama.
+ - Složenost: O(n2)			
+ - Najbolji slucaj: sortiran niz
+ - Najgori slucaj: obrnuto sortiran niz
+
+ OPIS:
+Bubble sort algoritam u svakom prolazu kroz niz poredi uzastopne elemente i razmenjuje im mesta ukoliko su u pogresnom poretku. Prolasci kroz niz se ponavljaju sve dok se ne napravi prolaz u kome je niz sortiran.
+Svojstvo ovog algoritma koje obezbedjuje zaustavljanje je da se nakon svake iteracije spoljasnje petlje sledeci najveci element koji nije bio na svojoj poziciji dolazi na nju. Bubble sort je na osnovu ovog svojstva i dobio ime - jer veliki elementi kao mehurici "isplivavaju" ka kraju niza.
+Najgori slucaj je kada su elementi polaznog niza obrnuto sortirani - u tom slucaju imamo n prolazaka kroz niz i u svakom prolasku po n poredjenja i n razmena, sto daje O(n2) poredjenja i O(n2) razmena.
+Bubble sort algoritam se smatra jako losim algoritmom. U sali se cak navodi kako bi jedini losiji algoritam od njega bio algoritam koji permutuje elemente niza na slucajan nacin sve dok niz slucajno ne postane sortiran. :)

@@ -1,0 +1,12 @@
+Steva:
+
+Original white-blue gradient css:
+background-color: qlineargradient(spread:pad, x1:0.220818, y1:0.840591, x2:0.908909, y2:0.101818, stop:0.238636 rgba(175, 199, 200, 248), stop:0.926136 rgba(62, 140, 153, 255));
+
+Sandra:
+
+
+
+Kocka:
+
+

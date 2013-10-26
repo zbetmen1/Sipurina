@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/konacan.png</file>
+        <file>images/Next.png</file>
+        <file>images/NextPressed.png</file>
+        <file>images/Pause.png</file>
+        <file>images/PausePressed.png</file>
+        <file>images/Play.png</file>
+        <file>images/PlayPressed.png</file>
+        <file>images/Previous.png</file>
+        <file>images/PreviousPressed.png</file>
+        <file>images/Stop.png</file>
+        <file>images/StopPressed.png</file>
+        <file>cFiles/tree.c</file>
+        <file>txtFiles/stablo.txt</file>
+        <file>txtFiles/obilasci.txt</file>
+    </qresource>
+    <qresource prefix="/text">
+        <file>txtFiles/astar.txt</file>
+        <file>txtFiles/BFS.txt</file>
+        <file>txtFiles/bubblesort.txt</file>
+        <file>txtFiles/DFS.txt</file>
+        <file>txtFiles/dijkstra.txt</file>
+        <file>txtFiles/insertionsort.txt</file>
+        <file>txtFiles/qsort.txt</file>
+        <file>txtFiles/selectionsort.txt</file>
+        <file>txtFiles/shellsort.txt</file>
+        <file>txtFiles/obilasci.txt</file>
+    </qresource>
+    <qresource prefix="/code">
+        <file>cFiles/BubbleSort.c</file>
+        <file>cFiles/dfs.c</file>
+        <file>cFiles/dijsktra.c</file>
+        <file>cFiles/InsertionSort.c</file>
+        <file>cFiles/QuickSort.c</file>
+        <file>cFiles/SelectionSort.c</file>
+        <file>cFiles/ShellSort.c</file>
+        <file>cFiles/astar.c</file>
+        <file>cFiles/bfs.c</file>
+    </qresource>
+</RCC>

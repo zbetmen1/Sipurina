@@ -1,0 +1,15 @@
+Steva:
+
+1. Change color of background.              ***DONE
+2. Create mechanism for resizing.           ***DONE
+3. Redesign controls                        ***DONE
+4. Implement input mechanism. Discuss.
+
+
+Sandra:
+
+
+
+Kocka:
+
+

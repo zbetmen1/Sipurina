@@ -1,0 +1,27 @@
+TREE TRAVERSAL
+
+In computer science, tree traversal refers to the process of visiting (examining and/or updating) each node in a tree data structure, exactly once, in a systematic way. Such traversals are classified by the order in which the nodes are visited. The following algorithms are described for a binary tree, but they may be generalized to other trees as well.
+
+There are three types of depth-first traversal: pre-order, in-order and post-order. For a binary tree, they are defined as operations recursively at each node, starting with the root node follows:
+Pre-order:
+	Visit the root.
+	Traverse the left subtree.
+	Traverse the right subtree.
+In-order (symmetric):
+	Traverse the left subtree.
+	Visit the root.
+	Traverse the right subtree.
+Post-order:
+	Traverse the left subtree.
+	Traverse the right subtree.
+	Visit the root.
+The trace of a traversal is called a sequentialization of the tree. No one sequentialisation according to pre-, in- or post-order describes the underlying tree uniquely. Either pre-order or post-order paired with in-order is sufficient to describe the tree uniquely, while pre-order with post-order leaves some ambiguity in the tree structure.
+Generic tree
+To traverse any tree in depth-first order, perform the following operations recursively at each node:
+Perform pre-order operation
+for i=1 to n-1 do
+Visit child[i], if present
+Perform in-order operation
+Visit child[n], if present
+Perform post-order operation
+where n is the number of child nodes. Depending on the problem at hand, the pre-order, in-order or post-order operations may be void, or you may only want to visit a specific child node, so these operations are optional. Also, in practice more than one of pre-order, in-order and post-order operations may be required. For example, when inserting into a ternary tree, a pre-order operation is performed by comparing items. A post-order operation may be needed afterwards to re-balance the tree.

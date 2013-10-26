@@ -1,0 +1,13 @@
+SELECTION SORT
+
+OSNOVNE KARAKTERISTIKE:
+ - Pripada klasi algoritama za sortiranje
+ - Kao i vecina ovakvih algoritama, zasnovan je na poredjenjima i zamenama.
+ - Složenost: O(n2)			
+ - Najbolji slucaj: sortiran niz
+ - Najgori slucaj: obrnuto sortiran niz
+
+OPIS:
+Selection sort je algoritam koji se moze u jednoj recenici opisati sa: "Ako niz ima vise od jednog elementa, zameni pocetni element sa najmanjim elementom niza i zatim rekurzivno sortiraj rep (elemente iza pocetnog)". U iterativnoj implementaciji, niz se sortira tako sto se u svakoj iteraciji na svoju poziciju dovodi sledeci po redu element niza, tj. u i-toj iteraciji se i-ti po redu element dovodi na poziciju i. Ovo se moze realizovati tako sto se pronadje pozicija m najmanjeg elementa od pozicije i do kraja niza i zatim se razmene element na poziciji i i element na poziciji m. Algoritam se zaustavlja kada se pretposlednji po velicini element dovede na pretposlednju poziciju u nizu.
+Invarijanta petlje je da su elementi niza array[0,i] sortirani, kao i da su svi oni manji od svih elemenata niza array[i+1, n-1].Posto je algoritam zasnovan na razmenama, multiskup elemenata polaznog niza se (trivijalno) ne menja. Zaustavljanje je takodje trivijalno.
+Broj razmena je O(n), ali je broj poredjenja O(n2), tako da je to i slozenost ovog algoritma.

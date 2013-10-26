@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{ background-color: qlineargradient(spread:pad, x1:0.504909, y1:0.141727, x2:0.505682, y2:0.931818, stop:0 rgba(66, 66, 66, 255), stop:0.926136 rgba(35, 35, 35, 255)) }
+
+QMenuBar  { color: white; }
+QMenuBar::item:selected   { background-color: rgb(117, 117, 117);color: black}
+QMenuBar::item:pressed{   color: rgb(56,56,56)}
+
+QMenuBar #menuAlgoritmi{ background-color: rgb(140, 140, 140); }
+QMenuBar #menuSort{background-color: rgb(140, 140, 140);}
+QMenuBar #menuData_Structures{background-color: rgb(140, 140, 140);}
+QMenuBar #menuWindows{background-color: rgb(140, 140, 140);}
+QMenuBar #menuGraph_Algorithms{background-color: rgb(140, 140, 140);}
+QMenuBar #menuSettings{background-color: rgb(140, 140, 140);}
+QMenuBar #menuTree_Algorithms{background-color: rgb(140, 140, 140);}
+QMenuBar #menuMore{background-color: rgb(140, 140, 140);}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QWidget" name="main_animacija" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="main_tekst" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="main_kod" native="true">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="status" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color:qlineargradient(spread:pad, x1:0.521955, y1:0.119, x2:0.505682, y2:0.931818, stop:0 rgba(177, 177, 177, 255), stop:0.505682 rgba(125, 125, 125, 255), stop:1 rgba(150, 150, 150, 255))}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="statusWrite">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statusAnimationMaximize">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{ background-color: rgb(52, 52, 52); color: white;
+border: none; margin: 0px; padding: 0px;
+}
+
+QPushButton:hover{ background-color: rgb(90,90,90); color: white; font-weight: bold;}</string>
+         </property>
+         <property name="text">
+          <string>Animation</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statusCodeMaximize">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{ background-color: rgb(52, 52, 52); color: white;
+border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+QPushButton:hover{ background-color: rgb(90,90,90); color: white; font-weight: bold;}</string>
+         </property>
+         <property name="text">
+          <string>Code</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statusTextMaximize">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{ background-color: rgb(72, 72, 72); color: white; border: none;
+    margin: 0px;
+    padding: 0px;}
+
+QPushButton:hover{ background-color: rgb(90,90,90); color: white; font-weight: bold;}</string>
+         </property>
+         <property name="text">
+          <string>Text</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>613</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAlgoritmi">
+    <property name="title">
+     <string>Algorithms</string>
+    </property>
+    <widget class="QMenu" name="menuData_Structures">
+     <property name="title">
+      <string>Data Structures</string>
+     </property>
+     <addaction name="actionStack"/>
+     <addaction name="actionTree"/>
+     <addaction name="actionGraph"/>
+     <addaction name="actionList"/>
+    </widget>
+    <widget class="QMenu" name="menuGraph_Algorithms">
+     <property name="title">
+      <string>Graph Algorithms</string>
+     </property>
+     <addaction name="actionGraphDFS"/>
+     <addaction name="actionGraphBFS"/>
+     <addaction name="actionA_Search"/>
+     <addaction name="actionDijkstra"/>
+    </widget>
+    <widget class="QMenu" name="menuSort">
+     <property name="title">
+      <string>Sort</string>
+     </property>
+     <addaction name="actionQuick_Sort"/>
+     <addaction name="actionShell_Sort"/>
+     <addaction name="actionInsertion_Sort"/>
+     <addaction name="actionSelection_Sort"/>
+     <addaction name="actionBubble_Sort"/>
+    </widget>
+    <widget class="QMenu" name="menuTree_Algorithms">
+     <property name="title">
+      <string>Tree Algorithms</string>
+     </property>
+     <addaction name="actionIn_Order"/>
+     <addaction name="actionPost_Order"/>
+     <addaction name="actionPre_Order_traverse"/>
+    </widget>
+    <addaction name="menuSort"/>
+    <addaction name="menuData_Structures"/>
+    <addaction name="menuGraph_Algorithms"/>
+    <addaction name="menuTree_Algorithms"/>
+   </widget>
+   <widget class="QMenu" name="menuWindows">
+    <property name="title">
+     <string>Windows</string>
+    </property>
+    <addaction name="actionText"/>
+    <addaction name="actionAnimation"/>
+    <addaction name="actionCode"/>
+   </widget>
+   <widget class="QMenu" name="menuMore">
+    <property name="title">
+     <string>More</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionGraph_Look_Settings"/>
+   </widget>
+   <addaction name="menuAlgoritmi"/>
+   <addaction name="menuWindows"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuMore"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionText">
+   <property name="text">
+    <string>Text</string>
+   </property>
+  </action>
+  <action name="actionAnimation">
+   <property name="text">
+    <string>Animation</string>
+   </property>
+  </action>
+  <action name="actionCode">
+   <property name="text">
+    <string>Code</string>
+   </property>
+  </action>
+  <action name="actionQuick_Sort">
+   <property name="text">
+    <string>Quick Sort</string>
+   </property>
+  </action>
+  <action name="actionShell_Sort">
+   <property name="text">
+    <string>Shell Sort</string>
+   </property>
+  </action>
+  <action name="actionInsertion_Sort">
+   <property name="text">
+    <string>Insertion Sort</string>
+   </property>
+  </action>
+  <action name="actionSelection_Sort">
+   <property name="text">
+    <string>Selection Sort</string>
+   </property>
+  </action>
+  <action name="actionBubble_Sort">
+   <property name="text">
+    <string>Bubble Sort</string>
+   </property>
+  </action>
+  <action name="actionStack">
+   <property name="text">
+    <string>Stack</string>
+   </property>
+  </action>
+  <action name="actionTree">
+   <property name="text">
+    <string>Tree</string>
+   </property>
+  </action>
+  <action name="actionGraph">
+   <property name="text">
+    <string>Graph</string>
+   </property>
+  </action>
+  <action name="actionGraphDFS">
+   <property name="text">
+    <string>Depth First Search</string>
+   </property>
+  </action>
+  <action name="actionGraphBFS">
+   <property name="text">
+    <string>Breadth First Search</string>
+   </property>
+  </action>
+  <action name="actionList">
+   <property name="text">
+    <string>List</string>
+   </property>
+  </action>
+  <action name="actionGraph_Look_Settings">
+   <property name="text">
+    <string>Graph Look Settings</string>
+   </property>
+  </action>
+  <action name="actionA_Search">
+   <property name="text">
+    <string>A* Search</string>
+   </property>
+  </action>
+  <action name="actionDijkstra">
+   <property name="text">
+    <string>Dijkstra</string>
+   </property>
+  </action>
+  <action name="actionIn_Order">
+   <property name="text">
+    <string>In-Order traverse</string>
+   </property>
+  </action>
+  <action name="actionPost_Order">
+   <property name="text">
+    <string> Post-Order traverse</string>
+   </property>
+  </action>
+  <action name="actionPre_Order_traverse">
+   <property name="text">
+    <string>Pre-Order traverse</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

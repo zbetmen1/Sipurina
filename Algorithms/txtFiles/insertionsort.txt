@@ -1,0 +1,13 @@
+INSERTION SORT
+
+OSNOVNE KARAKTERISTIKE:
+ - Pripada klasi algoritama za sortiranje
+ - Kao i vecina ovakvih algoritama, zasnovan je na poredjenjima i zamenama.
+ - Složenost: O(n2)			
+ - Najbolji slucaj: sortiran niz
+ - Najgori slucaj: obrnuto sortiran niz
+
+OPIS:
+Insertion sort algoritam sortira niz tako sto uzima jedan po jedan element niza i umece ga na odgovarajuce mesto u sortirani niz koji cuva krajnji rezultat. Konceptualno gledano, postoje dva niza - polazni niz iz kojeg se uklanjaju elementi i niz koji cuva rezultat i u koji se dodaju elementi. Medjutim, obicno implementacije koriste memorijski prostor polaznog niza za obe uloge - pocetni deo niza predstavlja rezultujuci niz, dok krajnji deo niza predstavlja preostali deo. Dakle, insertion sort se moze formulisati na sledeci nacin: "Ako niz ima vise od jednog elementa, sortiraj rekurzivno sve elemente ispred poslednjeg, a zatim umetni poslednji u vec sortiran prefiks."
+Invarijanta petlje je da je deo niza array[0, i-1] sortiran, kao i da se multiskup elemenata u nizu array ne menja. 
+U najgorem slucaju - slucaj obrnuto sortiranog niza - u i-toj iteraciji imamo i poredjenja i i razmena. Zato je ukupan broj razmena, kao i broj poredjenja O(n2).

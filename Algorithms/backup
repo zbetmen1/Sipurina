@@ -1,0 +1,34 @@
+cd cFiles
+rm -f *.o moc* *~
+echo "cFiles Clean!"
+cd .. 
+cd CODE
+rm -f *.o moc* *~
+echo "CODE clean"
+cd ..
+cd CORE_CLASSES
+rm -f *.o moc* *~
+echo "CORE_CLASSES clean"
+cd ..
+cd DATA_STRUCTURES
+rm -f *.o moc* *~
+echo "DATA_STRUCTURES clean"
+cd ..
+cd SORT
+rm -f *.o moc* *~
+echo "SORT clean"
+cd ..
+cd TABS
+rm -f *.o moc* *~
+echo "TABS celan"
+cd ..
+rm -f *.o
+rm -f moc*
+rm -f *~
+rm -f MERGED_PROJECT
+echo "PROJECT clean! :) "
+cd ..
+tar -zcf $1".tar.gz" MERGED_PROJECT
+mkdir  ~/backupProject
+mv $1".tar.gz" ~/backupProject
+echo "project backed up succeessfuly"

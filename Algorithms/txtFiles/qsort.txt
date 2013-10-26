@@ -1,0 +1,15 @@
+QUICK SORT
+
+OSNOVNE KARAKTERISTIKE:
+ - Pripada klasi algoritama za sortiranje
+ - Kao i vecina ovakvih algoritama, zasnovan je na poredjenjima i zamenama.
+ - Teorijska složenost: O(n2)			Rekurentna jednačina: T(n) = T(n-1) + O(n)
+ - Prosecan (i najčešći slučaj): O(nlogn)		Rekurentna jednačina: T(n) = T(n/2) + O(n)
+ - Najgori slucaj ulaza: vec sortiran niz
+ 
+OPIS:
+Quick sort algoritam pokušava da postigne bolju efikasnost, modifikujući osnovnu ideju selection sort algoritma tako što umesto minimuma (ili maksimuma), u svakom koraku na svoje mesto dovede neki element (obično nazivan pivot) koji je relativno blizu sredine niza. Medutim, da bi nakon toga, problem mogao biti sveden na sortiranje dva dvostruko manja podniza, potrebno je prilikom dovođenja pivota na svoje mesto grupisati sve elemente manje od njega levo od njega, a sve elemente veće od njega desno od njega. Dakle, ključni korak quick sort-a je tzv. korak particionisanja koji nakon izbora nekog pivotrajućeg elementa podrazumeva da se niz organizuje da prvo sadrži elemente manje od pivota, zatim pivotirajući element, i na kraju elemente veće od pivota.
+Funkcija particionisanje vrši particionisanje niza (pretpostavljajući da se pre particionisanja pivot nalazi na poziciji left) i vraća poziciju na kojoj se nalazi pivot nakon particionisanja. Funkcija se poziva samo za nizove koji imaju više od jednog elementa te joj je preduslov da je left manje ili jednako right. Postuslov funkcije particionisanje je da je (multi) skup elemenata niza a nepromenjen nakon njenog poziva, medutim njihov redosled je takav da su svi elementi niza array[left, positionOfPivot-1] manji ili jednaki elementu array[positionOfPivot], dok su svi elementi niza array[positionOfPivot+1, right] veći ili jednaki od elementa array[positionOfPivot].
+Kako bi se dobila jednačina T (n) = 2T (n/2) + O(n) i efikasnost O(n log n), potrebno je da korak particionisanja (tj. funkcija partitioning) bude izvršen u linearnom vremenu O(n).Dalje, potrebno je da pozicija pivota nakon particionisanja bude blizu sredini niza (kako dužina dva podniza na koje se problem svodi bilo približno jednaka n/2). Medutim, odredivanje srednjeg člana u nizu brojeva je problem koji nije značajno jednostavniji od samog sortiranja. Napomenimo da se za svaku strategiju izbora pivota (koja ne koristi slučajno izabrane brojeve) može konstruisati niz tako da u svakom koraku izbor pivota bude najgori mogući — onaj koji deli niz na nizove dužine 0 i n-1, što dovodi do jednačine T (n) = T (n − 1) + O(n) i kvadratne složenosti (O(n2 )). Medutim, većina strategija je takva da se u prosečnom slučaju može očekivati relativno ravnomerna raspodela što dovodi do optimalne složenosti (O(n log n)).
+
+
