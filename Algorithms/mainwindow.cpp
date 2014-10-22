@@ -198,21 +198,21 @@ void MainWindow::SortBubbleSort() {
     setSceneProperties(new BubbleSort());
     QString str("BubbleSort.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/bubblesort.txt");
+    m_textW->readFile(":text/txtFiles/bubblesort.txt");
     m_animationW->fitView();
 }
 void MainWindow::SortInsertionSort(){
     setSceneProperties(new InsertionSort());
     QString str("InsertionSort.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/insertionsort.txt");
+    m_textW->readFile(":text/txtFiles/insertionsort.txt");
     m_animationW->fitView();
 }
 void MainWindow::SortSelectionSort(){
     setSceneProperties(new SelectionSort());
     QString str("SelectionSort.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/selectionsort.txt");
+    m_textW->readFile(":text/txtFiles/selectionsort.txt");
     m_animationW->fitView();
 
 }
@@ -220,14 +220,14 @@ void MainWindow::SortQuickSort(){
     setSceneProperties(new QuickSort());
     QString str("QuickSort.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/qsort.txt");
+    m_textW->readFile(":text/txtFiles/qsort.txt");
     m_animationW->fitView();
 }
 void MainWindow::SortShellSort(){
     setSceneProperties(new ShellSort());
     QString str("ShellSort.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/shellsort.txt");
+    m_textW->readFile(":text/txtFiles/shellsort.txt");
     m_animationW->fitView();
 }
 void MainWindow::GraphDFS()
@@ -269,14 +269,14 @@ void MainWindow::DSList()
     setSceneProperties(new VisualList);
     QString str("Stack.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/stack.txt");
+    m_textW->readFile(":text/txtFiles/stack.txt");
     m_animationW->fitView();
 }
 void MainWindow::DSStack(){
     setSceneProperties(new VisualStack);
     QString str("Stack.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/stack.txt");
+    m_textW->readFile(":text/txtFiles/stack.txt");
     m_animationW->fitView();
 }
 void MainWindow::DSTree()
@@ -284,7 +284,7 @@ void MainWindow::DSTree()
     setSceneProperties(new VisualTree());
     QString str("tree.c");
     m_codeW->m_editor->setFile(str);
-    m_textW->readFile("txtFiles/stablo.txt");
+    m_textW->readFile(":text/txtFiles/stablo.txt");
     m_animationW->fitView();
 }
 void MainWindow::DSGraph()

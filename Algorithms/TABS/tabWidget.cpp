@@ -14,7 +14,7 @@ tabWidget::tabWidget(QWidget *parent) :
     ui->verticalLayout->setMargin(0);
     ui->horizontalLayout->setMargin(0);
     setControls();
-    QPixmap * map = new QPixmap("images/konacan.png");
+    QPixmap * map = new QPixmap(":images/images/konacan.png");
     ui->controls->setMask(map->mask());
 }
 

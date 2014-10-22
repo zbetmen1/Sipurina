@@ -8,7 +8,7 @@
 using std::cout;
 using std::endl;
 
-const QString CodeEditor::m_basePath("cFiles/");
+const QString CodeEditor::m_basePath(":code/cFiles/");
 
 CodeEditor::CodeEditor(QString &fileName, QWidget *parent) :
     QTextEdit(parent), m_cHighlighter(new Highlighter(document())), m_lastHighlightedLine(-1)
